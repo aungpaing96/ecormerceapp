@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_search"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/cl_search_height"
+                app:cardElevation="@dimen/card_search_elevation"
+                app:cardCornerRadius="@dimen/card_search_corner_radius"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:layout_marginStart="@dimen/list_margin_start_end"
+                android:layout_marginEnd="@dimen/list_margin_start_end">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/edittext_height"
+                        android:hint="@string/search"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/edittext_padding_start_end"
+                        android:paddingEnd="@dimen/edittext_padding_start_end"
+                        android:textSize="@dimen/value_text_size"
+                        android:textColor="@color/value_text_color"
+                        android:drawableStart="@drawable/ic_search_24"
+                        android:drawablePadding="@dimen/drawable_padding"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_brand_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/card_search"
+                android:layout_marginTop="@dimen/label_margin_top"/>
+
+            <TextView
+                android:id="@+id/tv_filter_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/popular"
+                style="@style/TextTitleStyle"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@id/rv_brand_list"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:layout_marginStart="@dimen/list_margin_start_end"/>
+
+            <ImageView
+                android:id="@+id/iv_filter"
+                android:layout_width="@dimen/icon_action_width_height"
+                android:layout_height="@dimen/icon_action_width_height"
+                android:src="@drawable/ic_filter_32"
+                app:layout_constraintTop_toTopOf="@id/tv_filter_title"
+                app:layout_constraintBottom_toBottomOf="@id/tv_filter_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/list_margin_start_end"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_item_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/iv_filter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/label_margin_top"/>
+
+            <ProgressBar
+                android:id="@+id/pb_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminateTint="@color/primary_color"
+                app:layout_constraintTop_toBottomOf="@id/tv_filter_title"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

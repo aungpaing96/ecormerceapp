@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/launcher_bg">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/TextHeaderStyle"
+        android:text="@string/launch_title"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/tv_launch_title_size"
+        app:layout_constraintBottom_toTopOf="@id/tv_hint"
+        app:layout_constraintStart_toStartOf="@id/tv_hint"
+        app:layout_constraintEnd_toEndOf="@id/tv_hint"
+        android:layout_marginStart="@dimen/list_margin_start_end"
+        android:layout_marginEnd="@dimen/list_margin_start_end"
+        android:layout_marginBottom="@dimen/label_margin_top"/>
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/launch_hint"
+        style="@style/TextLabelStyle"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        android:alpha=".6"
+        app:layout_constraintBottom_toTopOf="@id/btn_start"
+        app:layout_constraintStart_toStartOf="@id/btn_start"
+        app:layout_constraintEnd_toEndOf="@id/btn_start"
+        android:layout_marginStart="@dimen/list_margin_start_end"
+        android:layout_marginEnd="@dimen/list_margin_start_end"
+        android:layout_marginBottom="@dimen/tv_launch_hint_margin_bottom"/>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/button_height"
+        android:text="@string/start"
+        style="@style/TextValueStyle"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:background="@drawable/button_action_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/button_margin_top_bottom"
+        android:layout_marginStart="@dimen/list_margin_start_end"
+        android:layout_marginEnd="@dimen/list_margin_start_end"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

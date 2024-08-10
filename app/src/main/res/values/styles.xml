@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextValueStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">@dimen/value_text_size</item>
+        <item name="android:textColor">@color/value_text_color</item>
+        <item name="android:lineSpacingExtra">@dimen/text_line_spacing</item>
+    </style>
+
+    <style name="TextLabelStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">@dimen/label_text_size</item>
+        <item name="android:textColor">@color/label_text_color</item>
+        <item name="android:lineSpacingExtra">@dimen/text_line_spacing</item>
+    </style>
+
+    <style name="TextTitleStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">@dimen/title_text_size</item>
+        <item name="android:textColor">@color/value_text_color</item>
+        <item name="android:lineSpacingExtra">@dimen/text_line_spacing</item>
+    </style>
+
+    <style name="TextHeaderStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">@dimen/header_text_size</item>
+        <item name="android:textColor">@color/value_text_color</item>
+    </style>
+
+    <style name="TextSmallStyle" parent="Widget.MaterialComponents.TextView">
+        <item name="fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">@dimen/small_text_size</item>
+        <item name="android:textColor">@color/value_text_color</item>
+        <item name="android:lineSpacingExtra">@dimen/text_line_spacing</item>
+    </style>
+
+    <dimen name="text_line_spacing">4dp</dimen>
+</resources>

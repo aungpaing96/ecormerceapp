@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/card_list_corner_radius"
+        app:cardElevation="0dp"
+        android:background="@drawable/item_background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/label_margin_top"
+        android:layout_marginStart="@dimen/list_margin_start_end"
+        android:layout_marginEnd="@dimen/list_margin_start_end">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_background">
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$120"
+                style="@style/TextTitleStyle"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:layout_marginStart="@dimen/list_margin_start_end"/>
+
+            <ImageView
+                android:id="@+id/iv_love"
+                android:layout_width="@dimen/icon_width_height"
+                android:layout_height="@dimen/icon_width_height"
+                android:src="@drawable/ic_love"
+                app:layout_constraintTop_toTopOf="@id/tv_price"
+                app:layout_constraintBottom_toBottomOf="@id/tv_price"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="@dimen/list_margin_start_end"/>
+
+            <ImageView
+                android:id="@+id/iv_item"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/iv_item_height"
+                app:layout_constraintTop_toBottomOf="@id/tv_price"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="@dimen/iv_item_margin_start_end"
+                android:layout_marginEnd="@dimen/iv_item_margin_start_end"/>
+            
+            <ImageView
+                android:id="@+id/iv_cart"
+                android:layout_width="@dimen/icon_action_width_height"
+                android:layout_height="@dimen/icon_action_width_height"
+                android:src="@drawable/ic_cart_circle"
+                app:layout_constraintTop_toTopOf="@id/tv_name"
+                app:layout_constraintBottom_toBottomOf="@id/tv_name"
+                app:layout_constraintEnd_toEndOf="@id/iv_love"/>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/TextTitleStyle"
+                android:text="Nike"
+                app:layout_constraintTop_toBottomOf="@id/iv_item"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/tv_price"
+                app:layout_constraintEnd_toStartOf="@id/iv_cart"
+                android:layout_marginTop="@dimen/label_margin_top"
+                android:layout_marginBottom="@dimen/label_margin_top"
+                android:layout_marginEnd="@dimen/list_margin_start_end"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

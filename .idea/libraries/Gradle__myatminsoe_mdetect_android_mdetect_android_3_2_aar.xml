@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: myatminsoe.mdetect.android:mdetect-android:3.2@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/55fec74272c5218eabd096cda103a36d/transformed/mdetect-android-3.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/55fec74272c5218eabd096cda103a36d/transformed/mdetect-android-3.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/55fec74272c5218eabd096cda103a36d/transformed/mdetect-android-3.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/myatminsoe.mdetect.android/mdetect-android/3.2/1460e56cdae992a0c5ee66a47e18028c1ef6e3ed/mdetect-android-3.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/myatminsoe.mdetect.android/mdetect-android/3.2/e4705bdb7463d6682cbaf46377aa0d51ab4734b3/mdetect-android-3.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

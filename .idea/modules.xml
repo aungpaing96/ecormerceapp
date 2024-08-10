@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/SPLUSP_TEA_RESTAURANT.iml" filepath="$PROJECT_DIR$/.idea/modules/SPLUSP_TEA_RESTAURANT.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SPLUSP_TEA_RESTAURANT.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SPLUSP_TEA_RESTAURANT.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SPLUSP_TEA_RESTAURANT.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SPLUSP_TEA_RESTAURANT.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SPLUSP_TEA_RESTAURANT.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SPLUSP_TEA_RESTAURANT.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SPLUSP_TEA_RESTAURANT.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SPLUSP_TEA_RESTAURANT.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/escposprinter/SPLUSP_TEA_RESTAURANT.escposprinter.iml" filepath="$PROJECT_DIR$/.idea/modules/escposprinter/SPLUSP_TEA_RESTAURANT.escposprinter.iml" />
+    </modules>
+  </component>
+</project>

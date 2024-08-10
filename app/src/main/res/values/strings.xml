@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Aung Paing Testing</string>
+    <string name="fail">Fail</string>
+    <string name="ok">OK</string>
+    <string name="info">Info</string>
+    <string name="success">Success</string>
+    <string name="network_body">အင်တာနက်မရှိပါ။ ကျေးဇူးပြု၍ အင်တာနက်ဖွင့်ပီး ပြန်လည်ကြိုးစားပါ။</string>
+    <string name="again">Again</string>
+    <string name="start">Start</string>
+    <string name="launch_hint"><![CDATA[Smart, gorgeous & fashionable collection makes you cool]]></string>
+    <string name="launch_title">Live Your Perfect</string>
+    <string name="home">Home</string>
+    <string name="cart">Cart</string>
+    <string name="save">Save</string>
+    <string name="search">Search</string>
+    <string name="popular">Popular</string>
+    <string name="eu">EU</string>
+    <string name="uk">UK</string>
+    <string name="us">US</string>
+    <string name="description">Description</string>
+    <string name="free_delivery_and_returns">Free Delivery and Returns</string>
+    <string name="quantity">Quantity</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="click">Click</string>
+</resources>
